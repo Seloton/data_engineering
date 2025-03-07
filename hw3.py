@@ -19,8 +19,16 @@ Example:
      Return value should be "x wins!"
 
 """
+
 from typing import List
 
 
 def tic_tac_toe_checker(board: List[List]) -> str:
-    ...
+    # Выписываем все строки которые надо проверить
+    lines = board + [[*i] for i in zip(*board)] + [[board[i][i] for i in range(3)], [board[i][2 - i] for i in range(3)]]
+    # Ищем победителя у которого все значения в строке уникальны и который не "-"
+    win = [i for i in lines if len(set(i)) == 1 and '-' not in i]
+
+    if win:
+        return f'{win[0][0]} wins!'
+    return "unfinished!" if any('-' in row for row in board) else "draw!"

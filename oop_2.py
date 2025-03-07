@@ -53,6 +53,36 @@ import datetime
 from collections import defaultdict
 
 
+class Homework:
+    def __init__(self, text: str, day: int) -> None:
+        self.text = text
+        self.deadline = datetime.timedelta(days=day)
+        self.created = datetime.datetime.now()
+
+    def is_active(self) -> bool:
+        return self.deadline + self.created > datetime.datetime.now()
+
+
+class Student:
+    def __init__(self, last_name: str, first_name: str) -> None:
+        self.last_name = last_name
+        self.first_name = first_name
+
+    @staticmethod
+    def do_homework(homework) -> (object, None):
+        return homework if homework.is_active() else print('You are late')
+
+
+class Teacher:
+    def __init__(self, last_name: str, first_name: str) -> None:
+        self.last_name = last_name
+        self.first_name = first_name
+
+    @staticmethod
+    def create_homework(text, day) -> object:
+        return Homework(text, day)
+
+
 if __name__ == '__main__':
     opp_teacher = Teacher('Daniil', 'Shadrin')
     advanced_python_teacher = Teacher('Aleksandr', 'Smetanin')
