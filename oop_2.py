@@ -11,7 +11,7 @@
 HomeworkResult принимает объект автора задания, принимает исходное задание
 и его решение в виде строки
 Атрибуты:
-    homework - для объекта Homework, если передан не этот класс -  выкинуть
+    homework - для объекта Homework, если передан не этот класс - выкинуть
     подходящие по смыслу исключение с сообщением:
     'You gave a not Homework object'
 
@@ -53,6 +53,16 @@ import datetime
 from collections import defaultdict
 
 
+class DeadlineError(Exception):
+    pass
+
+
+class Person:
+    def __init__(self, last_name: str, first_name: str) -> None:
+        self.last_name = last_name
+        self.first_name = first_name
+
+
 class Homework:
     def __init__(self, text: str, day: int) -> None:
         self.text = text
@@ -63,24 +73,44 @@ class Homework:
         return self.deadline + self.created > datetime.datetime.now()
 
 
-class Student:
-    def __init__(self, last_name: str, first_name: str) -> None:
-        self.last_name = last_name
-        self.first_name = first_name
+class Student(Person):
+    def do_homework(self, homework: Homework, solution: str) -> object:
+        if not homework.is_active():
+            raise DeadlineError('You are late')
+        return HomeworkResult(self, homework, solution)
+
+
+class HomeworkResult:
+    def __init__(self, author: Student, homework: Homework, solution: str) -> None:
+        if not isinstance(homework, Homework):
+            raise TypeError('You gave a not Homework object')
+        self.author = author
+        self.solution = solution
+        self.homework = homework
+        self.created = datetime.datetime.now()
+
+
+class Teacher(Person):
+    homework_done = defaultdict(set)
 
     @staticmethod
-    def do_homework(homework) -> (object, None):
-        return homework if homework.is_active() else print('You are late')
-
-
-class Teacher:
-    def __init__(self, last_name: str, first_name: str) -> None:
-        self.last_name = last_name
-        self.first_name = first_name
-
-    @staticmethod
-    def create_homework(text, day) -> object:
+    def create_homework(text: str, day: int) -> object:
         return Homework(text, day)
+
+    @classmethod
+    def check_homework(cls, result: HomeworkResult) -> bool:
+        if len(result.solution) > 5:
+            cls.homework_done[result.homework].add(result)
+            return True
+        return False
+
+    @classmethod
+    def reset_results(cls, homework=None) -> None:
+        if homework:
+            cls.homework_done.pop(homework, None)
+        else:
+            cls.homework_done.clear()
+
 
 
 if __name__ == '__main__':
