@@ -3,30 +3,40 @@ import requests
 import json
 
 
-URL = "https://markets.businessinsider.com/index/components/s&p_500"
+# Парсер ссылок каждой акции
+def link_parser():
+    page = requests.get("https://markets.businessinsider.com/index/components/s&p_500")
+    soup = BeautifulSoup(page.text, "lxml")
+    table = soup.find("tbody", "table__tbody")
+    links = [f'https://markets.businessinsider.com{i.get("href")}' for i in table.find_all("a")]
+    return links
 
 
-page = requests.get(URL)
-bs = BeautifulSoup(page.text, "html.parser")
-temp = []
-table = bs.find("tbody", "table__tbody")
-rows = table.find_all("tr")
-for row in rows:
-    name = row.find("a").text.strip()  # Имя
-    prices = row.find_all("td", class_="table__td")[1].text.strip().split()  # Цены
-    changes = row.find_all("td", class_="table__td")[2].text.strip().split()  # Изменения
-    changes_percent = row.find_all("td", class_="table__td")[3].text.strip().split()  # Проценты
-    date = row.find_all("td", class_="table__td")[4].text.strip().split()  # Дата и время
-    mo_3 = row.find_all("td", class_="table__td")[5].text.strip().split()  # 3 месяца
-    mo_6 = row.find_all("td", class_="table__td")[6].text.strip().split()  # 6 месяца
-    year = row.find_all("td", class_="table__td")[7].text.strip().split()  # 1 год
+def parser():
+    links = link_parser()
+    stock_date = []
+    for stock_link in links:
+        page = requests.get(stock_link)
+        soup = BeautifulSoup(page.text, "lxml")
+        stock_dict = dict()
+        stock_dict["code"] = soup.find("span", "price-section__category").text.strip().split(" , ")[-1]
+        stock_dict["name"] = soup.find("span", "price-section__label").text
+        stock_dict["price"] = float(soup.find("span", "price-section__current-value").text)
+        stock_dict["P/E"] = float(soup.find("div", "snapshot__data-item padding-right--zero").text.split()[0])
+        stock_dict["growth"] = None
+        stock_dict["potential profit"] = float(soup.find("div", "snapshot__data-item snapshot__data-item--small snapshot__data-item--right").text.split()[0]) - float(soup.find("div", "snapshot__data-item snapshot__data-item--small").text.split()[0])
+        print(stock_dict)
+        print(soup.find_all("div", "snapshot__data-item snapshot__data-item--small snapshot__data-item--right").text)
+        print(soup.find_all("div", "snapshot__data-item snapshot__data-item--small").text)
+        return None
 
-    print(f"{name=}")
-    print(f"{prices=}")
-    print(f"{changes=}")
-    print(f"{changes_percent=}")
-    print(f"{date=}")
-    print(f"{mo_3=}")
-    print(f"{mo_6=}")
-    print(f"{year=}")
-    print("-" * 40)
+def create_json():
+    pass
+
+
+def write_json():
+    pass
+
+
+if __name__ == '__main__':
+    parser()
