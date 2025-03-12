@@ -4,56 +4,56 @@
         "name": "Viatris Inc Registered Shs ",
         "price": 808.53,
         "P/E": 9.33,
-        "potential profit": 2.81
+        "potential profit": 54.33
     },
     {
         "code": "F",
         "name": "Ford Motor Co. ",
         "price": 837.97,
         "P/E": 9.68,
-        "potential profit": 4.85
+        "potential profit": 63.73
     },
     {
         "code": "AMCR",
         "name": "Amcor PLC Registered Shs ",
         "price": 865.67,
         "P/E": 9.99,
-        "potential profit": 3.11
+        "potential profit": 30.31
     },
     {
         "code": "WBA",
         "name": "Walgreens Boots Alliance Inc ",
         "price": 971.28,
         "P/E": 11.21,
-        "potential profit": 1.34
+        "potential profit": 172.77
     },
     {
         "code": "PARA",
         "name": "Paramount Global ",
         "price": 992.92,
         "P/E": 11.46,
-        "potential profit": 4.8
+        "potential profit": 56.02
     },
     {
         "code": "AES",
         "name": "AES Corp. ",
         "price": 1037.94,
         "P/E": 11.98,
-        "potential profit": 2.99
+        "potential profit": 124.47
     },
     {
         "code": "HBAN",
         "name": "Huntington Bancshares Inc. ",
         "price": 1246.56,
         "P/E": 14.4,
-        "potential profit": 3.3
+        "potential profit": 54.26
     },
     {
         "code": "KEY",
         "name": "KeyCorp ",
         "price": 1312.35,
         "P/E": 15.14,
-        "potential profit": 3.16
+        "potential profit": 52.78
     },
     {
         "code": "IVZ",
@@ -67,6 +67,6 @@
         "name": "Host Hotels & Resorts Inc. ",
         "price": 1327.07,
         "P/E": 15.27,
-        "potential profit": 4.52
+        "potential profit": 39.06
     }
 ]

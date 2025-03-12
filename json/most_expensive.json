@@ -4,69 +4,69 @@
         "name": "NVR Inc. ",
         "price": 636120.42,
         "P/E": 7331.02,
-        "potential profit": 3.03
+        "potential profit": 42.18
     },
     {
         "code": "BKNG",
         "name": "Booking Holdings ",
         "price": 376660.37,
         "P/E": 4336.34,
-        "potential profit": 2.97
+        "potential profit": 69.28
     },
     {
         "code": "AZO",
         "name": "AutoZone Inc. ",
         "price": 308144.4,
         "P/E": 3556.93,
-        "potential profit": 4.39
+        "potential profit": 34.87
     },
     {
         "code": "ORLY",
         "name": "O Reilly Automotive Inc ",
         "price": 114683.83,
         "P/E": 1320.33,
-        "potential profit": 2.57
+        "potential profit": 46.69
     },
     {
         "code": "TDG",
         "name": "TransDigm Group IncShs ",
         "price": 114263.98,
         "P/E": 1316.32,
-        "potential profit": 2.24
+        "potential profit": 27.83
     },
     {
         "code": "MTD",
         "name": "Mettler-Toledo International Inc. ",
         "price": 107476.27,
         "P/E": 1239.27,
-        "potential profit": 3.96
+        "potential profit": 34.41
     },
     {
         "code": "GWW",
         "name": "Grainger Inc., W.W. ",
         "price": 84890.96,
         "P/E": 976.92,
-        "potential profit": 2.98
+        "potential profit": 40.29
     },
     {
         "code": "COST",
         "name": "Costco Wholesale Corp. ",
         "price": 80516.74,
         "P/E": 929.13,
-        "potential profit": 1.77
+        "potential profit": 54.6
     },
     {
         "code": "NFLX",
         "name": "Netflix Inc. ",
         "price": 77483.44,
         "P/E": 892.42,
-        "potential profit": 5.15
+        "potential profit": 96.4
     },
     {
         "code": "EQIX",
         "name": "Equinix Inc ",
         "price": 72339.63,
         "P/E": 834.01,
-        "potential profit": 2.13
+        "potential profit": 45.09
     }
 ]

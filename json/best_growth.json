@@ -1,0 +1,72 @@
+[
+    {
+        "code": "SMCI",
+        "name": "Super Micro Computer Inc ",
+        "price": 3535.39,
+        "P/E": 40.82,
+        "potential profit": 593.68
+    },
+    {
+        "code": "PLTR",
+        "name": "Palantir ",
+        "price": 6753.95,
+        "P/E": 78.02,
+        "potential profit": 520.48
+    },
+    {
+        "code": "MRNA",
+        "name": "Moderna Inc ",
+        "price": 2920.77,
+        "P/E": 33.74,
+        "potential profit": 482.43
+    },
+    {
+        "code": "CE",
+        "name": "Celanese Corp. ",
+        "price": 4729.15,
+        "P/E": 54.49,
+        "potential profit": 274.42
+    },
+    {
+        "code": "TSLA",
+        "name": "Tesla ",
+        "price": 19953.67,
+        "P/E": 230.49,
+        "potential profit": 251.95
+    },
+    {
+        "code": "GL",
+        "name": "Globe Life Inc ",
+        "price": 10774.98,
+        "P/E": 124.21,
+        "potential profit": 237.36
+    },
+    {
+        "code": "UAL",
+        "name": "United Airlines Holdings Inc Registered Shs ",
+        "price": 6583.41,
+        "P/E": 76.02,
+        "potential profit": 212.72
+    },
+    {
+        "code": "ENPH",
+        "name": "Enphase Energy Inc ",
+        "price": 5268.46,
+        "P/E": 60.82,
+        "potential profit": 173.85
+    },
+    {
+        "code": "WBA",
+        "name": "Walgreens Boots Alliance Inc ",
+        "price": 971.28,
+        "P/E": 11.21,
+        "potential profit": 172.77
+    },
+    {
+        "code": "TPR",
+        "name": "Tapestry ",
+        "price": 6231.09,
+        "P/E": 71.96,
+        "potential profit": 157.63
+    }
+]
