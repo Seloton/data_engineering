@@ -51,7 +51,7 @@
     "Python.task02.executor": "Run",
     "Python.task05.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "11-03-2025",
+    "git-widget-placeholder": "25-03-2025",
     "last_opened_file_path": "/Users/seloton/PycharmProjects/data_engineering",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hw3">
+  <component name="RunManager" selected="Python.hw1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="data_engineering" />
       <option name="ENV_FILES" value="" />
@@ -299,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hw3" />
         <item itemvalue="Python.hw1" />
+        <item itemvalue="Python.task02" />
+        <item itemvalue="Python.hw3" />
         <item itemvalue="Python.sp500" />
         <item itemvalue="Python.task05" />
-        <item itemvalue="Python.task02" />
       </list>
     </recent_temporary>
   </component>
