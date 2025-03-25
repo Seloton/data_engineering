@@ -7,6 +7,33 @@ Given a file containing text. Complete using only default collections:
     5) Find most common non ascii char for document
 """
 from typing import List
+import re
+
+
+def get_text(file_path: str) -> List[str]:
+    # Читаем текст из файла
+    text = list()
+    with open(file_path, "r") as file:
+        # Читаем заголовок
+        for _ in range(2):
+            text += [word.replace(' ', '').strip() for word in file.readline().split('    ')]
+        # Читаем основной текст
+        text += file.read().split()
+    return dash_remover(text)
+
+
+def dash_remover(text: List[str]) -> List[str]:
+    # Удаляем все тире и соединяем слова
+    new_text = list()
+    counter = 0
+    while counter < len(text):
+        if text[counter].endswith('-'):
+            new_text.append(text[counter][:-1] + text[counter + 1])
+            counter += 2
+        else:
+            new_text.append(text[counter])
+            counter += 1
+    return new_text
 
 
 def get_longest_diverse_words(file_path: str) -> List[str]:
@@ -30,5 +57,6 @@ def get_most_common_non_ascii_char(file_path: str) -> str:
 
 
 if __name__ == '__main__':
-    with open("data.txt", "r") as file:
-        file = file.read()
+    file_path = "data.txt"
+    q1 = get_text(file_path)
+    print(q1)
