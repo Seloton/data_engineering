@@ -10,7 +10,7 @@ r = redis.Redis(host='localhost', port=6379, db=0)
 while True:
     # Генерация случайного сообщения
     message = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
-    # Сериализуем словарь в JSON-строку (Redis принимает bytes/string)
+    # Сериализуем словарь в JSON-строку
     message_data = json.dumps({'message': message})
 
     # Отправляем в Redis

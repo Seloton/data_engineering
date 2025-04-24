@@ -28,7 +28,7 @@ def fetch_data():
 
 def save_to_file(data):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"data_slice_{timestamp}.txt"
+    filename = f"logs/data_slice_{timestamp}.txt"
     with open(filename, 'w') as f:
         for row in data:
             f.write(','.join(map(str, row)) + '\n')
@@ -37,4 +37,4 @@ if __name__ == "__main__":
     while True:
         data = fetch_data()
         save_to_file(data)
-        time.sleep(300)  # 5 минут
+        time.sleep(120)  # 2 минут
