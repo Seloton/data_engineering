@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b09e3b1c-804f-458d-a8ac-9aa44a8bc832" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_slice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/data_slice_20250424_183648.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/data_slice_20250424_183832.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Практика_БД_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Практика_БД_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Практика_БД_3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

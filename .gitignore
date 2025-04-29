@@ -1,3 +1,4 @@
 # Файлы IDE
 .idea/
 .DS_Store
+__pycache__
