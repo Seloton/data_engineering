@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b09e3b1c-804f-458d-a8ac-9aa44a8bc832" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggregator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тестирование о данных.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +57,11 @@
     "Python tests.Python tests for test.TestCatFactProcessor.executor": "Run",
     "Python tests.Python tests for test.TestCatFactProcessor.test_get_fact_successful_response.executor": "Run",
     "Python tests.Python tests in test.py.executor": "Run",
+    "Python.aggregator.executor": "Run",
     "Python.cleanup.executor": "Run",
     "Python.consumer.executor": "Run",
     "Python.data_slice.executor": "Run",
+    "Python.generator.executor": "Run",
     "Python.hw1.executor": "Run",
     "Python.hw3.executor": "Run",
     "Python.main.executor": "Run",
@@ -64,7 +72,7 @@
     "Python.task02.executor": "Run",
     "Python.task05.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "01-04-2025",
+    "git-widget-placeholder": "08-04-2025",
     "last_opened_file_path": "/Users/seloton/PycharmProjects/data_engineering",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -74,8 +82,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test.py">
-    <configuration name="cleanup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aggregator">
+    <configuration name="aggregator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="data_engineering" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,7 +96,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aggregator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_slice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="data_engineering" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_slice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aggregator" />
+        <item itemvalue="Python.generator" />
         <item itemvalue="Python tests.Python tests in test.py" />
         <item itemvalue="Python tests.Python tests for test.TestCatFactProcessor" />
         <item itemvalue="Python tests.Python tests for test.TestCatFactProcessor.test_get_fact_successful_response" />
-        <item itemvalue="Python.data_slice" />
-        <item itemvalue="Python.cleanup" />
       </list>
     </recent_temporary>
   </component>
